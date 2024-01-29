@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="banner">
+    <div class="navbar">
+      <img src="images/logo.jpg" class="logo">
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Lab</a></li>
+          <li><a href="#">Classroom</a></li>     
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1>WELCOME TO THE COLLGE</h1>
+      <p>PROVIDED NICE FACILITY AND <br> LAB WITH TEACHING ALL TYPE OF CODING.</p>
+
+      <div>
+        <button type="button"><span></span>CLICK HERE</button>
+        <button type="button"><span></span>ADMISSION</button>
+
+      </div>
+    </div>
+ </div>
+</body>
+</html>
+
+
+  <!------------------js validation-------------------------->
+   <!------------- <script>
+    function mydata()
+    {
+var a=document.getElementById("n1").value;
+var b=document.getElementById("n2").value;
+  if(a==""||b=="")
+  {
+    alert("All fields are mendatory");
+    return false;
+  }
+  else{
+    true;
+  }
+
+  }
+ </script>
+    <form>
+        username:<input type="text" id="n1"><br><br>
+        password:<input type="password" id="n2"><br><br>
+        <input type="submit" value="login" onclick="mydata()">
+    </form>
+  
+  -------------------------------------------->
+
